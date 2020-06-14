@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(24,23,23);
+  margin: 0;
+  font-family: 'Montserrat';
+  color: white;
+  letter-spacing: 0.025em;
+  /* більша відстань між літерами на темному тлі */
+  line-height: 1.65;
+  /* більший міжрядковий інтервал */
+}
+
+/* для всіх екранів, якщо не вказано протилежне (у media query, наприклад) */
+p, h1, ul, h2, h1 {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li {
+  margin-left: -1em;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  color: #17a38d;
+  font-size: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  /* em — розмір шрифту в цьому елементі */
+}
+
+span {
+  color: #17a38d;
+}
+
+/* для екранів від 800 пікселів шириною (планшети) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p, h1, ul, h2, h1 {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  p, h1, ul, h2, h1 {
+    margin-right: 15%;
+    margin-left: 15%;
+  }
+
+  img {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+/* великі десктопи */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+
+  p, h1, ul, h2, h1 {
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+}
